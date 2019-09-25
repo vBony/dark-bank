@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+
+#box-login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%); 
+    width: 700px;
+    background-color: #202225;
+    height: 600px;
+    border: 2px solid #37393E;
+    border-radius: 5px;
+    color: white;
+}
+#email-help{
+    cursor: default;
+}
+
+#btn-submit{
+    border: none;
+    background-color: white;
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    background-color: #202225;
+    border: 1px solid #555659;
+    color: white;
+    transition: 1s;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+#btn-submit:hover{
+    background-color: black;
+}
+
+#fundo-img img{
+    width: 100%;
+}
+
+#login-title{
+    width: 350px;
+    height:  80px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+    line-height: 80px;
+    margin-top: 20px;
+    background-color: #2F3136;
+    border-radius: 15px;
+    margin-bottom: 80px;
+    cursor: default;
+}
+
+#input-email{
+    background-color: #202225;
+    border: 2px solid #555659;
+}
+
+#input-email:focus{
+    border-color: white;
+}
+
+#input-senha{
+    background-color: #202225;
+    border: 2px solid #555659;
+}
+
+#input-senha:focus{
+    border-color: white;
+}
+
+#link-registro{
+    text-decoration: none;
+    color: white;
+}
+
+#footer-promo{
+    margin-bottom: 50px;
+}
+
+#footer-cr{
+    text-align: center;
+}
+
+
+
+
