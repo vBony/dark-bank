@@ -25,13 +25,13 @@
             <form method="POST">
                 <div class="form-group">
                     <label for="input-email">Email:</label>
-                    <input class="form-control" type="email" name="inputemail" id="input-email" required="required">
+                    <input class="form-control input-login" type="email" name="inputemail" id="input-email" required="required">
                     <small id="email-help" class="form-text text-muted">Jamais compartilhe seu email ou senha com alguém.</small>
                 </div>
 
                 <div class="form-group">
                     <label for="input-email">Senha:</label>
-                    <input class="form-control" type="password" name="inputsenha" id="input-senha" required="required">
+                    <input class="form-control input-login" type="password" name="inputsenha" id="input-senha" required="required">
                 </div>
 
                 <input id="btn-submit" type="submit" value="Enviar">

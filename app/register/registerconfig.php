@@ -6,12 +6,12 @@
         $nome = ucwords(strtolower(addslashes($_POST['nome'])));
         $sobrenome = ucwords(strtolower(addslashes($_POST['sobrenome'])));
         $email = addslashes($_POST['email']);
-        $_SESSION['useremail'] = $email;
         $senha = md5(addslashes($_POST['senha']));
         $agencia = rand(1000, 9999);
         $conta = rand(100000, 999999);
         $saldo = 0;
 
+        //Verificação se o email que o usuario está tentando registrar existe.
         $sql = "SELECT email FROM darkbank.users WHERE email = :email";
         $sql = $pdo -> prepare($sql);
         $sql->bindValue(":email", $email);
@@ -37,9 +37,11 @@
             $sql->bindValue(":saldo", $saldo);
             $sql->execute();
 
+            //Ainda não sei como fazer essas requisições entre o front e o back-end.
+            echo "<script> alert('Conta criada com sucesso!'); </script>";
             header("Location: ../index.php");
         }else{
-            header("Location: cu.php");
+            echo "<script> alert('Erro: essa conta já existe!'); </script>";
         }
     }
 

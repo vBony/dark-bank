@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+
 body, html {
     width: 100%;
     height: 100%;
@@ -61,23 +68,41 @@ body, html {
     margin-bottom: 80px;
     cursor: default;
 }
+.input-login{
+    border: none;
+    background-color: #202225;
+    border: 1px solid #555659;
+    color: white;
+    border-radius: 5px;
+}
+
 
 #input-email{
     background-color: #202225;
     border: 2px solid #555659;
+    color: white
 }
 
 #input-email:focus{
-    border-color: white;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border: 2px solid white;
+    background-color: black;
 }
 
 #input-senha{
     background-color: #202225;
     border: 2px solid #555659;
+    color: white;
 }
 
 #input-senha:focus{
-    border-color: white;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0px;
+    border: 2px solid white;
+    background-color: black;
 }
 
 #link-registro{

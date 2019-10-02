@@ -19,7 +19,7 @@ session_start();
                $_SESSION['id'] = $dados['id'];
                header("Location: home/home.php");
             }else{
-                header("Location: ../index.php");
+                header("Location: index.php");
             }
         }
 
